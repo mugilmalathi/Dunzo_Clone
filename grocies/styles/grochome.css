@@ -1,0 +1,334 @@
+
+        #data{
+            font-family: 'Trebuchet MS', sans-serif;
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            grid-gap: 50px;
+        }
+         #data>div{
+            display: flex;
+            width: 100%;
+            height: 150px;
+            gap: 25px;
+            border-radius: 10px;
+            padding-right: 10px;
+        }
+        #data>div:hover{
+            display: flex;
+            width: 100%;
+            height: 150px;
+            gap: 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            padding-right: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        img{
+            width: 30%;
+            height: 80%;
+            border-radius: 20px;
+            padding: 15px;
+        }
+        #hed{
+            width: 100%;
+            margin: auto;
+            height: 150px;           
+            background-color: rgb(244, 255, 244);
+            margin-bottom: 30px;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        #home1{
+            color: black;
+            padding-left: 120px;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        #inhed{
+            width: 80%;  
+            margin: auto;          
+            height: 100%;
+            display: flex;
+            
+        }
+        #img{
+            width: 80%;
+            height: 80%;
+            padding: 9px;
+        }
+        #imgd{
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 10px;
+            width: 90px;
+            height: 90px;
+            background-color: rgb(211, 255, 211);
+        }
+        #con{
+            margin-left: 10px;
+        }
+        /*
+
+        navbar and footer css
+
+        */
+
+        body{
+    margin:auto;
+}
+
+#Mnavbar{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+}
+#navb{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    
+}
+#nav_img{
+    width: 130px;
+    height: 45%;    
+    cursor: pointer;
+    margin-left:100px;
+    margin-top: 20px;
+}
+#nav_location{
+    width: 30px;
+    height: 40%;    
+    margin-left: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#tit{
+    margin-left: 100px;
+    display: flex;
+   gap: 30px;
+   margin-top: 20px;
+}
+#title1{  
+    
+    
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+#title1:hover{
+    color: #00d290;
+}
+#title2{    
+    
+    
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+#title2:hover{
+    color: #00d290;
+}
+#nav_search{
+    width: 60px;
+    height: 100%;
+    margin-left: 40px;
+    line-height: 0%;
+    
+
+}
+#nav_cart{
+    width: 60px;
+    height: 100%;
+    margin-left: 30px;
+   line-height: 0%;
+}
+#icon_search{
+    width: 40%;
+    height: 35%;
+    font-weight: 200;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#icon_search:hover{
+    color: #00d290;
+}
+#icon1{
+    height: 20%;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: small;
+    line-height: 0%;
+    color: black;
+}
+#icon1:hover{
+    color: #00d290;
+}
+#icon_cart{
+    width: 40%;
+    height: 35%;
+    font-weight: 200;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#icon_cart:hover{
+    color: #00d290;
+}
+#icon2{
+    height: 20%;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: small;
+    line-height: 0%;
+    color: black;
+}
+#icon2:hover{
+    color: #00d290;
+}
+
+ #nav_signin{
+    margin-left: 30px;
+    width: 75px;   
+    height: 30px;  
+    margin-top: 30px;    
+    border-radius: 20px;
+    background-color: #00d290;
+    color: white;
+    border: 1px solid #00d290;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: medium; 
+} 
+#Mnavy{
+    width: 100%;
+    height: 55px;
+    background-color: #172b5f;
+    display: flex;
+}
+#navy_icon{
+    margin-left: 95px;
+    width: 40px;
+    height: 50%;
+    margin-bottom: 20px;
+}
+.navy_text1{    
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+.navy_text2{  
+    padding-left: 180px;
+    color: #00d290;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+#Mnavy-text{
+    display: flex;
+    justify-content: space-between;
+}
+#footer{
+    width: 100%;
+    height: 700px;
+    background-color: #171e30;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+#footer_index{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+#footer_p{
+    font-weight: 200;
+    font-size: small;
+    padding-bottom: 30px;
+    line-height: 20px;
+}
+#line{
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgb(73, 72, 72);
+}
+#footer_end{
+    width: 80%;
+    margin: auto;
+    height: 450px;
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+#footer_logo{
+    width: 15%;
+}
+#footer_dunzo{
+    width: 20%;
+}
+#footer_service{
+    width: 20%;
+}
+#footer_getin{
+    width: 20%;
+}
+#footer_scooty{
+    width: 30%;
+}
+#dunzo_logo{
+    width: 50%;
+    height: 70px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+#footer_dunzo>a>h3{
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
+#footer_dunzo>a>h4{
+    color: white;
+}
+#footer_service>a>h3{
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
+#footer_service>a>h4{
+    color: white;
+}
+#footer_getin>a>h3{
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
+#footer_getin>a>h4{
+    color: white;
+}
+#scooty{
+    width: 100%;
+    margin: auto;
+    height: 160px;
+}
+a{
+    text-decoration: none;
+}
+#fot{
+    line-height:10px;
+    color: white;
+}
+#footer_dunzo>a:hover{
+    text-decoration: underline white;
+}
+#footer_service>a:hover{
+    text-decoration: underline white;
+}
+#footer_getin>a:hover{
+    text-decoration: underline white;
+}

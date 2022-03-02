@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./pickup.css">
+</head>
+<body>
+    <div id="cont">
+        <div id="logo"><img id="logo" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-4d2d81aefcf296bc100d9edc114c2ea5.png" alt=""></div>
+        <div id="profile">
+            <span class="material-icons">shopping_cart</span>
+            <span class="material-icons">person</span>
+        </div>
+    </div>
+    <div id="container">
+        <div id="box1">
+            <div>
+                <p id="package">Send packages</p>
+                <p><span>Your on demand local courier</span></p>
+            </div>
+            <div id="sendbox">
+                <div id="symbol">
+                    <span class="material-icons arrow">arrow_upward</span>
+                    <div id="lines">
+                        <p>|</p>
+                        <p>|</p>
+                        <p>|</p>
+                        <p>|</p>
+                        <p>|</p>
+                        <p>|</p>
+                    </div>
+                    <span class="material-icons arrow">arrow_downward</span>
+                </div>
+                <div>
+                    <div class="location" id="pdiv">
+                        <p>PICKUP LOCATION *</p>
+                        <div id="pickup">Search pickup location</div>
+                        <div id="pickupname"></div>
+                        <hr>
+                    </div>
+                    <div class="location" id="ddiv">
+                        <p>DROP POINT *</p>
+                        <div id="drop">Search drop location</div>
+                        <div id="dropname"></div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div id="instruct">
+                <span class="material-icons" id="note">note_alt</span>
+                <input type="text" id="instructions" placeholder="Any instructions for the delivery partner?">
+            </div>
+            <div id="terms"><p>By confirming I accept this order doesn’t contain illegal/resticted items, if illegal/restricted items are found by Dunzo Partner, they may report it to the law enforcement authorities. <a href="">Terms and Conditions</a></p></div>
+            <div id="pay"></div>
+        </div>
+        <div class="overlay" id="div1">
+            <div class="head">
+                <div class="heading">
+                    <h2>Search pickup location</h2>
+                    <span class="material-icons close" id="closepickup">close</span>
+                </div>
+                <input type="text" placeholder="Search for location" id="place">
+            </div>
+            <div class="div2" id="div2"></div>
+            <div class="div3" id="div3"></div>
+            <div class="div5" id="div5"></div>
+        </div>
+        <div class="overlay" id="div6">
+            <div class="head">
+                <div class="heading">
+                    <h2>Search drop location</h2>
+                    <span class="material-icons close" id="closedrop">close</span>
+                </div>
+                <input type="text" placeholder="Search for location" id="dropplace">
+            </div>
+            <div class="div2" id="div7"></div>
+            <div class="div3" id="div8"></div>
+            <div class="div5" id="div9"></div>
+        </div>
+        <div id="box2">
+            <div id="cart">
+                <div id="invoice"><span class="material-icons">receipt_long</span><span> Invoice</span></div>
+                <p>* Dunzo cash cannot be used to send packages</p>
+                <div class="price">
+                    <div><p>Partner delivery fee</p></div>
+                    <div id="amount"></div>
+                </div>
+                <hr>
+                <div class="price">
+                    <div><h3>To pay</h3></div>
+                    <div id="total"></div>
+                </div>
+            </div>
+            <div id="rules">
+                <p id="head">Some do’s & Dont’s</p>
+                <p>No Purchases - <span>Delivery partner would not be able to make any purchase</span></p>
+                <p>Package Weight - <span>We cannot deliver items that can’t be easily carried on bike</span></p> 
+                <p>No Autos/Cabs - <span>We will not be able to get something transported via these</span></p> 
+                <p>Restricted/Illegal Item - <span>Please don’t hand over any restricted item</span></p>
+            </div>
+            <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/packages_pnd_small-8c969b49a1b0b58e35972d119309503b.png" alt="">  
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="pickup.js" type="module"></script>

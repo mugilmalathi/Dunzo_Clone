@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+    <link rel="stylesheet" href="./styles/grochome.css">
+    
+    
+</head>
+<body>
+    <!-- navbar -->
+        <div id="Mnavbar">
+           
+        </div>
+
+        <!-- navyBlue -->
+        <div id="Mnavy">
+            <img id="navy_icon" src="./images/HomeIcon.png">
+            <div id="Mnavy-text">
+                <h3 class="navy_text1">Order Paan items, munchies and much more on our new Dunzo Mo app</h3>
+            <h3 class="navy_text2">Download Dunzo Mo app now ></h3>
+            </div>
+        </div>
+
+    <div id="hed">
+        <p id="home1">Home -> Hyderabad</p>
+        <div id="inhed">
+            <div id="imgd">
+            <img id="img" src="https://ik.imagekit.io/dunzo/icons/website/bluegreen/category/grocery.png?tr=w-88,h-88,cm-pad_resize" alt="">
+        
+        </div>
+        <div id="con">
+        <h2>Groceries & Essentials in Hyderabad</h2>
+        <p>42 Stores</p>
+        </div>
+        </div>
+    </div>
+    <div id="data"></div>
+    <div id="footer">
+        
+    </div>
+</body>
+</html>
+<script type="module">
+//import data from "./scripts/grochome.js"
+// navbar Dynamic
+import navbar from './components/navbar.js'; //changes made by mugil ~changes:homepage.js
+
+let navbar_container = document.getElementById('Mnavbar');
+
+navbar_container.innerHTML = navbar()
+
+
+// footer Dynamic
+import footer from './components/footer.js';
+
+let footer_container = document.getElementById('footer');
+
+footer_container.innerHTML = footer()
+let mart_div = document.getElementById("data");
+    let response = getData("https://dunzobackendclone.herokuapp.com/markets");
+response
+.then( (res) => {    
+     console.log("res",res)
+        appendData(res, mart_div)
+      })
+      .catch((err) =>{
+    console.log("err",err)
+});
+
+async function getData(url) {
+  try {
+    let res = await fetch(url);
+
+    let data = await res.json();
+    return data;
+  } catch (el) {
+    console.log(el);
+  }
+}
+ function appendData(data, location) {
+ 
+
+data.forEach(el=>{
+    let data_div = document.getElementById("data")
+    let div = document.createElement("div");       
+    let img = document.createElement("img");    
+    let sh = document.createElement("h2");
+    let p = document.createElement("p");
+    let p1 = document.createElement("p");
+    img.src = el.image;    
+    sh.textContent = el.name;
+    p.textContent = el.location  
+    p1.textContent = el.distance 
+    div.append(img,sh,p,p1)    
+    data_div.append(div);
+    data_div.onclick = function cat(){
+    window.location.href = "grocires.html"
+    
+     }
+})
+ }
+</script>

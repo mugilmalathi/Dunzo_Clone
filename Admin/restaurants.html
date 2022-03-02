@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Restaurants</title>
+    <style>
+        #logo{
+            width: 100%;
+            height: 60px;
+            margin-bottom: 50px;
+        }
+        img{
+            height: 40%;
+            width: 90px;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+        #restaurants{
+            width: 20%;
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: 2px 2px 2px 5px gray;
+            border-radius: 20px;
+        }
+        input{
+            margin-top: 20px;
+            width: 90%;
+            height: 30px;
+            margin-left: 10px;
+            border-radius: 7px;
+            border: 1px solid gray;
+        }
+        h4{
+            font-weight:bold;
+            font-size: larger;
+            padding-top: 10px;
+            color: #32c8db;
+            text-align: center;
+        }
+        input:nth-of-type(5){
+            width: 93%;
+            height: 40px;
+            border-radius: 10px;
+            background-color: #05f9a8;
+            border:1px solid #05f9a8;
+            color: white;
+            font-weight: bolder;
+            font-size: large;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <form id="restaurants">
+        <h4>Restaurant</h4>
+        <input type="number" placeholder="Enter id" id="id">
+        <br>
+        <input type="text" placeholder="Enter title" id="title">
+        <br>
+        <input type="number" placeholder="Enter price" id="price">
+        <br>
+        <input type="text" placeholder="Enter image url" id="image">
+        <br>
+        <input type="submit" placeholder="submit form">
+    </form>
+</body>
+</html>
+<script>
+
+document.getElementById("restaurants").addEventListener("submit", getdetails);
+
+async function getdetails(event){
+        try{
+            event.preventDefault()
+            var restaurantsdata = {
+            id:document.getElementById("id").value,
+            title:document.getElementById("title").value,
+            price:document.getElementById("price").value,
+            image:document.getElementById("image").value
+        }
+        restaurantsdata = JSON.stringify(restaurantsdata)
+        console.log(restaurantsdata)
+        }catch(err){
+            console.log(err)
+        }
+            let url = `https://dunzobackendclone.herokuapp.com/restaurants`
+
+        let response = await fetch(url,{
+            method:"POST",
+            body: restaurantsdata,
+            headers:{
+                "Content-Type" : "application/json",
+            },
+        })
+        let data = await response.json()
+        console.log(data)
+    }
+
+    async function getdata(){
+        try{
+        let response = await fetch("https://dunzobackendclone.herokuapp.com/restaurants")
+        let data = await response.json()
+        console.log(data)
+        }catch(err){
+            console.log(err)
+        }
+    }
+    getdata()
+
+</script>

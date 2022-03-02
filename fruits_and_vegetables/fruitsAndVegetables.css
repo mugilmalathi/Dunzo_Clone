@@ -1,0 +1,96 @@
+body button{
+    color: #00d290;
+    font-size: 1rem;
+    font-weight: bold;
+    
+  
+    
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    border:solid whitesmoke;
+}
+#fruitss,#vegetabless,#fvCart{
+    height: 900px;
+    overflow:scroll;
+}
+
+#nb{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
+}
+#vegetabless>div:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#fruitss>div:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body button:hover{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#fandv,#head{
+    display: grid;
+    /* justify-content:space-around; */
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+li{
+    font-size:1em;
+    font-weight: bold;
+
+}
+ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color:#00d290 ;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  ul li:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+#fruitss img{
+   width: 25%;
+   height: 100%;
+   
+}
+#vegetabless img{
+  width: 30%;
+ height: 100%;
+}
+#fruitss>div{
+    display: flex;
+    margin-top: 5%;
+}
+
+#vegetabless>div{
+    display: flex;
+    margin-top: 5%;
+    justify-content: left;
+    
+}
+#fvCart img{
+    width: 50%;
+
+}
+#fvCart{
+    text-align: center;
+}
+#vegetabless>div{
+    margin-right: 0;
+}
+#vegetabless{
+    text-align: left;
+    border-right:1px solid black ;
+}
+#fruitss{
+    border-right: 1px solid black;
+}
+

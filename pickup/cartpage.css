@@ -1,0 +1,256 @@
+body {
+  background-color: rgb(245, 243, 243);
+  font-family: "Poppins", sans-serif;
+}
+#cont {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+  background-color: white;
+}
+#logo {
+  width: 10%;
+  margin-left: 10%;
+}
+#logo > img {
+  width: 100%;
+}
+#profile {
+  display: flex;
+  width: 90%;
+  justify-content: end;
+  margin-right: 10%;
+}
+#container {
+  margin: auto;
+  width: 65%;
+  height: 450px;
+  display: flex;
+  gap: 20px;
+}
+#payment {
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+}
+#cart {
+  width: 30%;
+  height: 70%;
+  background-color: white;
+}
+#options {
+  margin-left: 2%;
+  width: 100%;
+  display: flex;
+  height: 84%;
+}
+#payopt p {
+  margin-left: 5%;
+}
+#payopt {
+  background-color: #f3f3f5;
+  width: 40%;
+  font-size: 12px;
+  font-weight: bold;
+}
+#payopt:hover {
+  cursor: pointer;
+}
+#payopt > div {
+  display: flex;
+  align-items: center;
+  margin-left: 8%;
+  margin-top: 5%;
+  height: 10%;
+}
+#heading {
+  height: 10%;
+  margin-left: 2%;
+}
+#heading > h3 {
+  line-height: 0px;
+}
+#heading > p {
+  font-size: 10px;
+}
+.dispay {
+  margin-left: 3%;
+  border: 1px solid rgb(219, 216, 216);
+  border-radius: 10px;
+  height: 40%;
+  width: 50%;
+}
+#div2 {
+  display: none;
+  margin-left: 3%;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgb(219, 216, 216);
+  border-radius: 10px;
+  height: 40%;
+  width: 50%;
+}
+#div2 > input {
+  width: 70%;
+  margin: auto;
+}
+#div2 > button {
+  width: 40%;
+  margin: auto;
+}
+#paylogo {
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 2%;
+}
+#paylogo > div {
+  width: 10%;
+  margin-right: 2%;
+}
+#paylogo > div:nth-child(2) {
+  width: 50%;
+}
+#image {
+  width: 100%;
+  margin-top: 3%;
+}
+#off > p {
+  margin-left: 5%;
+  font-size: 9px;
+  color: #5a27cf;
+  font-weight: bold;
+}
+.line {
+  width: 90%;
+  margin: auto;
+}
+.line > hr {
+  border: 0.1px solid rgb(219, 216, 216);
+}
+#link {
+  width: 90%;
+  margin: auto;
+  font-size: 9px;
+  font-weight: bold;
+  color: #878c9b;
+}
+#button {
+  margin-left: 5%;
+}
+#paybutton {
+  padding: 3% 8%;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #06d393;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+#cardbutton {
+  padding: 3% 8%;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #06d393;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+#otpbutton {
+  padding: 3% 8%;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #06d393;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+#offers {
+  background-color: white;
+}
+#input {
+  border-radius: 5px;
+  border: 1px solid rgb(219, 216, 216);
+}
+#div1 {
+  display: none;
+}
+#carthead {
+  margin-left: 4%;
+  font-family: "Poppins", sans-serif;
+  height: 7%;
+}
+#carthead > h4 {
+  line-height: 0px;
+  margin: 8% 0%;
+  margin-bottom: 1%;
+}
+#carthead > span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #878c9b;
+  margin-bottom: 0px;
+}
+#carthead > span:nth-child(3) {
+  color: #06d393;
+}
+.small {
+  font-size: 10px;
+  margin-left: 5%;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  color: #878c9b;
+  font-weight: bold;
+}
+#notes {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+#invoice {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  font-size: 12px;
+  font-weight: bold;
+}
+#sub {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6%;
+  font-size: 10px;
+  font-weight: bold;
+  margin-right: 5%;
+}
+#total {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6%;
+  margin-right: 5%;
+}
+#total > h6 {
+  margin: 2% 0%;
+}
+#pick {
+  font-size: 10px;
+  height: 8%;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: bold;
+}
+#dro {
+  font-size: 10px;
+  font-weight: bold;
+  height: 8%;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 8%;
+}

@@ -1,0 +1,180 @@
+body{
+    font-family: Gilroy, sans-serif;
+}
+#navigate{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: #F7FDFA;
+}
+#navigate > div{
+    margin-top: 18px;
+    margin-left: 230px;
+}
+a{
+    color: #00B37A;
+}
+#heading_cont{
+    /* border: 1px solid #dddddd; */
+    width: 100%;
+    height: 150px;
+    display: flex; 
+    background-color: #F7FDFA;
+    gap: 25px;
+}
+#img_div{
+    border: 1px solid transparent;
+    width: 88px;
+    height: 88px;
+    margin-left: 230px;
+    /* margin-top: 5px; */
+    border-radius: 5px;
+}
+#img_div > img{
+    width: 125px;
+    height: 125px;
+    border-radius: 15px;
+}
+#heading{
+    border: 1px solid transparent;
+    width: 324px;
+    height: 88px;
+    margin: 0px 0px 0px 24px;
+    line-height: 8px;
+}
+#search-div{
+    border: 1px solid #dddddd;
+}
+#search-div > div{
+    /* border: 1px solid red; */    
+    width: 450px;
+    height: 75px;
+    margin: auto;
+}
+input{
+    margin-top: 15px;
+    height: 45px;
+    width: 380px;
+    border-radius: 5px;
+    border: 1px solid #00B37A;
+}
+#main{
+    border: 1px solid #F7FDFA;
+    display: flex;
+}
+#main > #items{
+    border: 1px solid #F7FDFA;
+    width: 30%;
+    height: 400px;
+}
+#main > #martdata{
+    border: 1px solid #F7FDFA;
+    width: 40%;
+}
+#main > #fvCart{
+    border: 1px solid #F7FDFA;
+    width: 30%;
+}
+#items > p{
+    text-align: right;
+    margin-right: 15px;
+    color: #9fa3af;
+}
+#menu > div{
+    border: 1px solid #dddddd;
+    font-size: 25px;
+    /* background-color: #f3f3f5; */
+}
+#menu > div > p{
+    margin-left: 25px;
+}
+#fandv {
+display: flex;    
+width: 100%;
+font-family: 'Trebuchet MS', sans-serif;
+
+}  
+
+#fvCart img{
+width: 50%;
+
+}
+#fvCart{
+text-align: center;
+overflow: scroll;
+height: 400px;
+}
+#ful{
+width: 130px;
+margin: auto;
+}
+#martdata{    
+overflow: scroll;
+width: 50%;
+margin: auto;
+height: 400px;
+font-family: 'Trebuchet MS', sans-serif;
+}
+#h1{
+margin: auto;
+padding-left: 30px;
+}
+#martdata>div{   
+display: flex;  
+width: 100%;
+height: 120px; 
+margin-bottom: 2px;       
+}
+#martdata>div:hover{   
+display: flex;  
+width: 100%;
+height: 120px;     
+background-color: white;
+margin-bottom: 2px;  
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#martdata>div>div{   
+display: flex; 
+gap: 50px;    
+}
+img{
+width: 25px;
+height: 25px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-top: 20px;
+}
+#fvCart > img{
+width: 150px;
+height: 150px;
+
+}
+#check{
+width: 300px;
+height: 50px;
+padding-bottom: 20px;
+border-radius: 50px;
+margin: auto;
+}
+#co{
+padding-bottom: 50px;
+justify-content: space-between;
+}
+button{
+border-radius: 20px;
+width: 80px;
+height: 30px;
+margin-top: 20px;
+background-color: rgb(250, 245, 240);
+border:0.1px solid rgb(187, 187, 187);
+color: #00d290;
+}
+button:hover{
+border-radius: 20px;
+width: 80px;
+height: 30px;
+border:0.1px solid rgb(187, 187, 187);
+background-color: white;
+}

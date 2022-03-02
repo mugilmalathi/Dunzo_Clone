@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/search.css">
+    <title>Search</title>    
+    </head>
+<body>
+    <div id="Mnavbar"></div>
+    <div id="Mcontent">
+        <input id="search_bar" type="text">
+        <button id="search">Search</button>
+    </div>
+    <div id="show"></div>
+</body>
+</html>
+
+<script type="module">
+
+// navbar Dynamic
+import navbar from './scripts/homepage.js';
+
+let navbar_container = document.getElementById('Mnavbar');
+
+navbar_container.innerHTML = navbar();
+
+
+// document.getElementById('search').addEventListener('click', getData);
+
+// var names = document.getElementById('search_bar').value;
+
+// async function getData(){
+
+//     let res = await fetch(`https://dunzobackendclone.herokuapp.com/fruits`);
+//     let data = await res.json();
+//     console.log(data);
+//     //if(names === 'fruits'){
+        
+//         appendData(data)
+//     //}
+// }
+
+// function appendData(arr){
+
+    
+//     arr.map((e)=>{
+
+
+//           let div = document.createElement('div');
+//           div.setAttribute('id', 'div')
+
+//           let img = document.createElement('img');
+//           img.src = e.image;
+//           img.setAttribute('id', 'img');
+
+//           let name = document.createElement('h4');
+//           name.textContent = e.title;
+//           name.setAttribute('id', 'name');
+
+//           div.append(img, name);
+//           document.getElementById('show').append(div);
+//     })
+// }
+
+
+//search data from search.js
+import {veggies , fruits, mart} from './scripts/search.js'
+
+var empty = document.getElementById('show');
+
+document.getElementById('search').addEventListener('click', function(){
+
+    var show = document.getElementById('search_bar').value;
+    if(show === 'fruits'){
+
+        empty.innerHTML = null;
+
+       fruits.map((e)=>{
+
+          let div = document.createElement('div');
+          div.setAttribute('id', 'div')
+
+          let img = document.createElement('img');
+          img.src = e.image;
+          img.setAttribute('id', 'img');
+
+          let name = document.createElement('h4');
+          name.textContent = e.selection2;
+          name.setAttribute('id', 'name');
+
+          div.append(img, name);
+          document.getElementById('show').append(div)
+
+        })
+    }
+    else if(show === 'vegetables'){
+
+        empty.innerHTML = null;
+
+        veggies.map((e)=>{
+
+          let div = document.createElement('div');
+          div.setAttribute('id', 'div')
+
+          let img = document.createElement('img');
+          img.src = e.image;
+          img.setAttribute('id', 'img');
+
+          let name = document.createElement('h4');
+          name.textContent = e.selection1;
+          name.setAttribute('id', 'name');
+
+          div.append(img, name);
+          document.getElementById('show').append(div)
+        })
+    }
+    else if(show === 'groceries'){
+        empty.innerHTML = null;
+
+        mart.map((e)=>{
+
+          let div = document.createElement('div');
+          div.setAttribute('id', 'div')
+
+          let img = document.createElement('img');
+          img.src = e.image;
+          img.setAttribute('id', 'img');
+
+          let name = document.createElement('h4');
+          name.textContent = e.selection1;
+          name.setAttribute('id', 'name');
+
+          div.append(img, name);
+          document.getElementById('show').append(div)
+        })
+    }
+})
+
+
+
+    
+//homepage navigation
+document.getElementById('nav_img').addEventListener('click', function(){
+
+window.location.href = 'homepage.html';
+})
+
+
+
+
+
+</script>

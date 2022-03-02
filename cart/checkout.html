@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="../homepage/styles/index.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
+</head>
+<body>
+
+    <div id="cointainer">
+        <div id="Mnavbar">
+
+        </div>
+
+        <div id="main">
+            <img id="bike" src="./images/dbike.jpg" alt="">
+            <img id="message" src="./images/message.jpg" alt="">
+            <div id="pop">
+                <h2 id="demo"></h2>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+<script type="module">
+
+import navbar from '../homepage/scripts/homepage.js';
+
+let navbar_container = document.getElementById('Mnavbar');
+
+navbar_container.innerHTML = navbar()
+
+import footer from '../homepage/components/footer.js';
+
+let footer_container = document.getElementById('footer');
+
+footer_container.innerHTML = footer()
+
+document.getElementById("demo").innerHTML = "Thank's For Using DUNZO....!"
+
+
+const myTimeout = setTimeout(order, 2000);
+
+function order() {
+  document.getElementById("demo").innerHTML = "Your Order is On the Way.....!"
+}
+
+
+
+
+
+
+</script>

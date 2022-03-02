@@ -1,0 +1,241 @@
+body {
+  background-color: rgb(245, 243, 243);
+}
+#cont {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+  background-color: white;
+}
+#logo {
+  width: 10%;
+  margin-left: 10%;
+}
+#logo > img {
+  width: 100%;
+}
+#profile {
+  display: flex;
+  width: 90%;
+  justify-content: end;
+  margin-right: 10%;
+}
+#container {
+  margin: auto;
+  position: relative;
+  width: 80%;
+  height: 350px;
+  font-size: 10px;
+  display: flex;
+}
+#box2 {
+  position: absolute;
+  width: 30%;
+  margin-left: 71%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: white;
+}
+#box1 {
+  position: absolute;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: white;
+}
+#rules {
+  height: 70%;
+}
+.overlay {
+  display: none;
+  z-index: 9;
+  height: 450px;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+p {
+  color: black;
+  margin-left: 10px;
+}
+span {
+  color: #878c9b;
+}
+#head {
+  color: #36a882;
+}
+img {
+  width: 100%;
+  height: 30%;
+}
+#package {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #06d393;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 0px;
+}
+#lines > p {
+  margin-top: 0px;
+  font-size: 6px;
+  line-height: 2px;
+  font-weight: bolder;
+  color: #878c9b;
+  margin-left: 9px;
+}
+#sendbox {
+  display: flex;
+  margin-top: 50px;
+}
+input {
+  border: 1px solid transparent;
+}
+hr {
+  background-color: #06d393;
+  border: 0.5px solid transparent;
+  margin-bottom: 20px;
+}
+.location {
+  color: #878c9b;
+  width: 500px;
+  font-size: 12px;
+}
+.location > p {
+  font-size: 8px;
+  color: #878c9b;
+}
+#symbol {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#instructions {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(247, 243, 243);
+}
+#instruct {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+#terms > p {
+  margin-left: 30px;
+  width: 375px;
+  font-size: 8px;
+  color: #878c9b;
+}
+.head {
+  width: 100%;
+  /* margin-left: 30px; */
+  color: black;
+}
+.head > input {
+  width: 80%;
+  height: 30px;
+  margin-left: 9%;
+  border: 1px solid #06d393;
+  border-radius: 10px;
+}
+.maps {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.div2 {
+  height: 40%;
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.div2:hover {
+  cursor: pointer;
+}
+.div2 > p {
+  color: #878c9b;
+}
+.image {
+  height: 40%;
+  width: 20%;
+}
+.div3 {
+  margin-top: 20px;
+  display: grid;
+}
+.div3 > div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  gap: 20px;
+}
+.div3 input {
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  border: 1px solid #878c9b;
+}
+.heading {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.close:hover {
+  cursor: pointer;
+}
+.div5 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.continue {
+  padding: 2% 20%;
+  background-color: #00d290;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+#invoice {
+  display: flex;
+  align-items: center;
+}
+#cart {
+  display: none;
+  height: 70%;
+}
+#cart > p {
+  font-size: 8px;
+  color: #878c9b;
+  font-family: "Poppins", sans-serif;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+#pay {
+  margin-left: 5%;
+}
+#paybutton {
+  padding: 2% 15%;
+  background-color: #00d290;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: white;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./cartpage.css">
+</head>
+<body>
+<div id="cont">
+    <div id="logo"><img id="logo" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-4d2d81aefcf296bc100d9edc114c2ea5.png" alt=""></div>
+        <div id="profile">
+            <span class="material-icons">person</span>
+        </div>
+</div>
+<div id="container">
+    <div id="payment">
+        <div id="heading">
+            <h3>Select payment method</h3>
+            <p>Select your payment method from the existing one or add new one</p>
+        </div>
+        <div id="options">
+            <div id="payopt">
+                <div id="offers"><p>Offers for you</p></div>
+                <div id="wallets"><p>Wallets</p></div>
+                <div id="cards"><p>Credit and Debit cards</p></div>
+                <div id="upi"><p>UPI</p></div>
+            </div>
+            <div class="dispay" id="dispay">
+                <div id="paylogo">
+                    <div>
+                        <img id="image" src="https://ik.imagekit.io/dunzo/tr:w-72,h-72,cm-pad_resize_payment_ico/icons/R4_Icons/payment/Simpl.png" alt="">
+                    </div>
+                <div><span id="payname">Simpl</span></div>
+                </div>
+                <div id="off"><p>Get 25% cashback upto ₹100</p></div>
+                <div class="line" id="hr"><hr></div>
+                <div id="link">
+                    <p id="linktext">Your Simpl account is not linked. Please Link your Account.</p>
+                    <div id="div1">
+                        <input type="text" placeholder="E.g rahul@icici">
+                    </div>
+                </div>
+                <div id="button"><button id="paybutton">Link Account</button></div>
+            </div>
+            <div id="div2"></div>
+        </div>
+    </div>
+    <div id="cart">
+        <div id="carthead">
+            <h4>Your cart</h4>
+            <span>from</span>
+            <span>Send Packages</span>
+        </div>
+        <div class="line"><hr></div>
+        <div><p class="small">Pickup Location</p></div>
+        <div id="pick"><p id="pickup"></p></div>
+        <div><p class="small">Drop Location</p></div>
+        <div id="dro"><p id="drop"></p></div>
+        <div id="notes">
+            <span class="material-icons">note_alt</span><input type="text" placeholder="Add instructions related to delivery?">
+        </div>
+        <div id="invoice">
+            <span class="material-icons">receipt</span>
+            <span>Invoice</span>
+        </div>
+        <div id="sub">
+            <p>Partner delivery fee</p>
+            <p id="sp"></p>
+        </div>
+        <div class="line"><hr></div>
+        <div id="total">
+            <h6>To pay</h6>
+            <h6 id="tp"></h6>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="./cartpage.js" type="module"></script>

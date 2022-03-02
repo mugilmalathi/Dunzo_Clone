@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../homepage/styles/index.css">
+    <link rel="stylesheet" href="styles/restaurant.css">
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <title>Restaurant</title>
+    <!-- <style>
+        body{
+            font-family: Gilroy, sans-serif;
+        }
+        #navigate{
+            border: 1px solid transparent;
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            font-size: 12px;
+            background-color: #F7FDFA;
+        }
+        #navigate > div{
+            margin-top: 18px;
+            margin-left: 230px;
+        }
+        a{
+            color: #00B37A;
+        }
+        #heading_cont{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 129px;
+            display: flex;
+            background-color: #F7FDFA;
+        }
+        #img_div{
+            border: 1px solid transparent;
+            width: 88px;
+            height: 88px;
+            margin-left: 230px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        #heading{
+            border: 1px solid transparent;
+            width: 324px;
+            height: 88px;
+            margin: 0px 0px 0px 24px;
+            line-height: 8px;
+        }
+        #container{
+            border: 1px solid transparent;
+            width: 100%;
+            height: 2000px;
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: repeat(2,600px);
+            grid-template-rows: repeat(10,153px);
+            grid-gap: 50px;
+            padding: 15px;
+        }
+        #container > .rest_div{
+            border: 1px solid transparent;
+            display: flex;
+            margin-left: 200px;
+            gap: 20px;
+            padding: 15px;
+            /* transition: 1s; */
+        }
+        .rest_div:hover{
+            /* transform: scale(1.1); */
+            border-radius: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        .rest_name{
+            border: 1px solid transparent;
+            width: 250px;
+        }
+        .rest_name > h4{
+            margin-top: 0px;
+        }
+        .rest_img > img{
+            border-radius: 15px;
+        }
+    </style> -->
+</head>
+<body>
+    <div id="Mnavbar"></div>
+
+    <div id="navigate">
+        <div>
+            <a href="../homepage/homepage.html">Home</a>
+            <i class="fas fa-arrow-right"></i>
+            <a href="">Chennai</a>
+            <i class="fas fa-arrow-right"></i>
+            <a href="">Food Delivery</a>
+        </div>
+    </div>
+
+    <div id="heading_cont">
+        <div id="img_div">
+            <img src="https://ik.imagekit.io/dunzo/icons/website/bluegreen/category/restaurants.png?tr=w-88,h-88,cm-pad_resize" alt="">
+        </div>
+        <div id="heading">
+            <h1>Food Delivery</h1>
+            <p>200 Restaurant</p>
+        </div>
+    </div>
+
+    <div id="container">
+    </div>
+
+    <div id="footer">
+
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import navbar from '../homepage/scripts/homepage.js' //changes made by mugil ~changes:homepage.js
+
+    let nav_div = document.getElementById('Mnavbar');
+
+    nav_div.innerHTML = navbar();
+
+    import footer from '../homepage/components/footer.js';
+
+    let footer_div = document.getElementById('footer');
+
+    footer_div.innerHTML = footer();
+
+    document.getElementById('nav_img').addEventListener('click', function(){
+
+    window.location.href = '../homepage/homepage.html';
+})
+
+
+
+    let restaurant = async () => {
+
+        try{
+
+            let res = await fetch('https://dunzobackendclone.herokuapp.com/restaurantnames');
+            let rest_data = await res.json();
+            
+            rest_data.forEach(el => {
+
+            let main_div = document.createElement('div');
+            main_div.setAttribute('class','rest_div');
+
+            let img_div = document.createElement('div');
+            img_div.setAttribute('class' , 'rest_img');
+
+            let name_div = document.createElement('div');
+            name_div.setAttribute('class', 'rest_name');
+
+            let img = document.createElement('img');
+            img.src = el.image;
+            img.style.width = '125px';
+            img.style.height = '125px';
+
+            let name = document.createElement('h4');
+            name.innerText = el.name;
+
+            let location = document.createElement('p');
+            location.innerText = el.location;
+
+            let dist = document.createElement('p');
+            dist.innerText = el.distance;
+
+            img_div.append(img);
+            name_div.append(name,location,dist);
+            main_div.append(img_div,name_div);
+            document.getElementById('container').append(main_div);
+
+            main_div.onclick = function menu(){
+                window.location.href = 'menu.html';
+            }
+            });
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+    
+restaurant();
+
+</script>
+

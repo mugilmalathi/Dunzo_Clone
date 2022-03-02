@@ -1,0 +1,429 @@
+#fandv {
+    display: flex;    
+    width: 100%;
+    font-family: 'Trebuchet MS', sans-serif;
+   
+}  
+
+#fvCart img{
+    width: 50%;
+
+}
+#fvCart{
+    text-align: center;
+    overflow: scroll;
+    height: 400px;
+}
+#ful{
+    width: 130px;
+    margin: auto;
+}
+#martdata{    
+    overflow: scroll;
+    width: 50%;
+    margin: auto;
+    height: 400px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#h1{
+    margin: auto;
+    padding-left: 30px;
+}
+#martdata>div{   
+    display: flex;  
+    width: 100%;
+    height: 120px; 
+    margin-bottom: 2px;       
+}
+#martdata>div:hover{   
+    display: flex;  
+    width: 100%;
+    height: 120px;     
+    background-color: white;
+    margin-bottom: 2px;  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#martdata>div>div{   
+    display: flex; 
+    gap: 50px;    
+}
+img{
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#check{
+    width: 300px;
+    height: 50px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    margin: auto;
+}
+#co{
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+button{
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: rgb(250, 245, 240);
+    border:0.1px solid rgb(187, 187, 187);
+    color: #00d290;
+}
+button:hover{
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    border:0.1px solid rgb(187, 187, 187);
+    background-color: white;
+}
+#scrhead{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(187, 187, 187);
+}
+#scrhead:hover{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(187, 187, 187);
+}
+#list-item{
+    margin-left: 100px;
+    overflow: scroll;
+    height: 400px;
+    text-align: right;
+    width: 20%;
+}
+#itm{
+    cursor: pointer;
+}
+#ser-lis{
+    height: 70%;
+    margin-top: 15px;
+    width: 40%;
+    margin-left: 300px;
+}
+#inp{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 0.1px solid #00d290;
+    margin-top: 5px;  
+    font-size: 16px; 
+}
+#serdiv{
+    width: 100%;
+    height: 50px;
+   
+}
+#hed{
+            width: 100%;
+            margin: auto;
+            height: 140px;           
+            background-color: rgb(244, 255, 244);           
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        #inhed{
+            width: 70%;  
+            margin: auto;          
+            height: 100%;
+            display: flex;
+            
+        }
+        #home1{
+            color: black;
+            padding-left: 120px;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        #img{
+            width: 80%;
+            height: 80%;
+            padding: 9px;
+        }
+        #imgd{
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 10px;
+            width: 90px;
+            height: 90px;
+            background-color: rgb(211, 255, 211);
+        }
+        #con{
+            margin-left: 10px;
+        }
+        
+        
+
+
+       /*
+       
+       navbar style
+
+       */
+
+
+   body{
+    margin:auto;
+}
+
+#Mnavbar{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+}
+#navb{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    
+}
+#nav_img{
+    width: 130px;
+    height: 45%;    
+    cursor: pointer;
+    margin-left:100px;
+    margin-top: 20px;
+}
+#nav_location{
+    width: 30px;
+    height: 40%;    
+    margin-left: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#tit{
+    margin-left: 100px;
+    display: flex;
+   gap: 30px;
+   margin-top: 20px;
+}
+#title1{  
+    
+    
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+#title1:hover{
+    color: #00d290;
+}
+#title2{    
+    
+    
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+#title2:hover{
+    color: #00d290;
+}
+#nav_search{
+    width: 60px;
+    height: 100%;
+    margin-left: 40px;
+    line-height: 0%;
+    
+
+}
+#nav_cart{
+    width: 60px;
+    height: 100%;
+    margin-left: 30px;
+   line-height: 0%;
+}
+#icon_search{
+    width: 40%;
+    height: 35%;
+    font-weight: 200;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#icon_search:hover{
+    color: #00d290;
+}
+#icon1{
+    height: 20%;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: small;
+    line-height: 0%;
+    color: black;
+}
+#icon1:hover{
+    color: #00d290;
+}
+#icon_cart{
+    width: 40%;
+    height: 35%;
+    font-weight: 200;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#icon_cart:hover{
+    color: #00d290;
+}
+#icon2{
+    height: 20%;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: small;
+    line-height: 0%;
+    color: black;
+}
+#icon2:hover{
+    color: #00d290;
+}
+
+ #nav_signin{
+    margin-left: 30px;
+    width: 75px;   
+    height: 30px;  
+    margin-top: 30px;    
+    border-radius: 20px;
+    background-color: #00d290;
+    color: white;
+    border: 1px solid #00d290;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: medium; 
+} 
+#Mnavy{
+    width: 100%;
+    height: 55px;
+    background-color: #172b5f;
+    display: flex;
+}
+#navy_icon{
+    margin-left: 95px;
+    width: 40px;
+    height: 50%;
+    margin-bottom: 20px;
+}
+.navy_text1{    
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+.navy_text2{  
+    padding-left: 180px;
+    color: #00d290;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+#Mnavy-text{
+    display: flex;
+    justify-content: space-between;
+}
+#footer{
+    width: 100%;
+    height: 700px;
+    background-color: #171e30;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+#footer_index{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+#footer_p{
+    font-weight: 200;
+    font-size: small;
+    padding-bottom: 30px;
+    line-height: 20px;
+}
+#line{
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgb(73, 72, 72);
+}
+#footer_end{
+    width: 80%;
+    margin: auto;
+    height: 450px;
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+#footer_logo{
+    width: 15%;
+}
+#footer_dunzo{
+    width: 20%;
+}
+#footer_service{
+    width: 20%;
+}
+#footer_getin{
+    width: 20%;
+}
+#footer_scooty{
+    width: 30%;
+}
+#dunzo_logo{
+    width: 50%;
+    height: 70px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+#footer_dunzo>a>h3{
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
+#footer_dunzo>a>h4{
+    color: white;
+}
+#footer_service>a>h3{
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
+#footer_service>a>h4{
+    color: white;
+}
+#footer_getin>a>h3{
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
+#footer_getin>a>h4{
+    color: white;
+}
+#scooty{
+    width: 100%;
+    margin: auto;
+    height: 160px;
+}
+a{
+    text-decoration: none;
+}
+#fot{
+    line-height:10px;
+    color: white;
+}
+#loc{
+    color: black;
+}
+#footer_dunzo>a:hover{
+    text-decoration: underline white;
+}
+#footer_service>a:hover{
+    text-decoration: underline white;
+}
+#footer_getin>a:hover{
+    text-decoration: underline white;
+}
+      

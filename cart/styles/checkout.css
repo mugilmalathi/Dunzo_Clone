@@ -1,0 +1,30 @@
+#main{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: #01ffa9;
+}
+#bike{
+    margin-top: 150px;
+    margin-left: 200px;
+    height: 70%;
+    width: 50%;
+}
+#message{
+    margin-left: -200px;
+    height: 300px;
+}
+#pop{
+    margin-top: 50px;
+    margin-left: -280px;
+    height: 150px;
+    width: 200px;
+}
+h2{
+    font-size: xx-large;
+    padding-top: 10px;
+    color: #473871;
+}
+a{
+    text-decoration: none;
+}
