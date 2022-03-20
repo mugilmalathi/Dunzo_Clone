@@ -24,7 +24,7 @@
 <h3>Contributors:</h3>
 <ol>
   <li>Siddhalinga:https://github.com/Siddhalinga</li>
-  <li>Vignesh:https://github.com/vignesh</li>
+  <li>Vignesh:https://github.com/Vigneshprabu1398</li>
   <li>Ashutosh:https://github.com/Ashutosh</li>
   <li>Zaki:https://github.com/Zaki</li>
   <li>Bheema:https://github.com/Bheema</li>
